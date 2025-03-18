@@ -27,7 +27,7 @@ const DataView = () => {
   const [records, setRecords] = useState([]);
 
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: "AIzaSyD9QMrIOt7Oiza9gBIyeobBORORuHKqASQ",
+    googleMapsApiKey: "123",
   });
 
   useEffect(() => {
@@ -46,7 +46,7 @@ const DataView = () => {
               const response = await fetch(
                 `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
                   address
-                )}&key=AIzaSyD9QMrIOt7Oiza9gBIyeobBORORuHKqASQ`
+                )}&key=123`
               );
               const result = await response.json();
               console.log(3, result)
