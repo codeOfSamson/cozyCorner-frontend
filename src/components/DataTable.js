@@ -19,7 +19,7 @@ const DataTable = () => {
           </tr>
         </thead>
         <tbody>
-          {data.getAllRecords.map((record) => (
+          {data.getRecords.map((record) => (
             <tr key={record._id} className="border">
               <td className="p-2">{record.source}</td>
               <td className="p-2">{new Date(record.timestamp).toLocaleString()}</td>
